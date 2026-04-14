@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Clear Cache Free</title>
+  <meta name="description" content="Clear Cache Free privacy policy. No data collection, no analytics, no tracking. Your browsing data stays in your browser.">
+  <link rel="icon" href="icons/icon48.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ── Nav ─────────────────────────────────────────────────────────── -->
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="icons/icon48.png" alt="Clear Cache Free icon">
+      Clear Cache Free
+    </a>
+    <div class="nav-links">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="release-notes.html">Release Notes</a>
+      <a href="#" class="nav-cta hide-mobile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v10M7 14l5 5 5-5"/><rect x="3" y="19" width="18" height="2" rx="1" fill="currentColor" stroke="none"/></svg>
+        Add to Chrome
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Page hero ─────────────────────────────────────────────────────── -->
+<section class="page-hero">
+  <div class="wrap">
+    <a href="index.html" class="btn-back">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      Back to home
+    </a>
+    <h1>Privacy Policy</h1>
+    <p>Last updated: April 2026</p>
+  </div>
+</section>
+
+<!-- ── Content ───────────────────────────────────────────────────────── -->
+<main class="wrap" style="padding-bottom: 60px;">
+
+  <div class="content-card">
+    <h2>The short version</h2>
+    <p><strong>Clear Cache Free collects no personal data, sends no data to any server, and includes no analytics or tracking of any kind.</strong> Your browsing data is accessed only to delete it — it is never read, stored externally, or transmitted.</p>
+  </div>
+
+  <div class="content-card">
+    <h2>What data the extension accesses</h2>
+    <p>Clear Cache Free requests the following Chrome permissions. Each is used exclusively for the function described — nothing else.</p>
+
+    <h3>browsingData</h3>
+    <p>Required to clear cache, cookies, history, and other browsing data. The extension calls the <code>chrome.browsingData</code> API to delete data you select. It does not read or inspect the contents of that data before deleting it.</p>
+
+    <h3>storage</h3>
+    <p>Your settings, custom presets, domain rules, and schedule configuration are saved locally using <code>chrome.storage.sync</code>. This data syncs across your own Chrome profiles via Google Sync if you are signed in — it is never sent to any third-party server.</p>
+
+    <h3>alarms</h3>
+    <p>Used exclusively to trigger scheduled clears. No data is transmitted when an alarm fires.</p>
+
+    <h3>notifications</h3>
+    <p>Used to display an optional confirmation notification after a clear completes. The notification contains only the list of data types that were cleared. This information is shown only on your device and is not recorded.</p>
+
+    <h3>cookies</h3>
+    <p>Required by the <code>chrome.browsingData</code> API to perform domain-aware cookie clearing. The extension does not read individual cookie values.</p>
+
+    <h3>host_permissions (&lt;all_urls&gt;)</h3>
+    <p>Required to support Active Tab Only mode and domain-specific clearing rules. The extension does not read page content — this permission is needed solely to identify the origin of the active tab when scoping a clear operation.</p>
+  </div>
+
+  <div class="content-card">
+    <h2>Data collection &amp; analytics</h2>
+    <p>Clear Cache Free contains <strong>no analytics SDK, tracking pixel, telemetry endpoint, or crash reporter</strong>. The extension makes zero outbound network requests. You can verify this by inspecting the source code.</p>
+    <ul>
+      <li>No usage statistics are collected</li>
+      <li>No install or uninstall events are reported</li>
+      <li>No feature usage is logged</li>
+      <li>No device identifiers are recorded</li>
+      <li>No IP addresses are stored</li>
+    </ul>
+  </div>
+
+  <div class="content-card">
+    <h2>Data storage</h2>
+    <p>The only data Clear Cache Free stores is your preferences (settings, presets, schedules, domain rules). This is saved using <code>chrome.storage.sync</code>, which is managed entirely by Chrome and Google's sync infrastructure. Clear Cache Free has no access to the storage layer beyond reading and writing your own preferences.</p>
+    <p>You can delete all stored data at any time by uninstalling the extension or clearing the extension's storage via Chrome's developer tools.</p>
+  </div>
+
+  <div class="content-card">
+    <h2>Third-party services</h2>
+    <p>Clear Cache Free does not integrate with, embed, or communicate with any third-party service. There are no:
+    </p>
+    <ul>
+      <li>Advertising networks</li>
+      <li>Analytics platforms (Google Analytics, Mixpanel, Amplitude, etc.)</li>
+      <li>Error monitoring services (Sentry, Bugsnag, etc.)</li>
+      <li>Remote configuration services</li>
+      <li>Content delivery networks serving extension code</li>
+    </ul>
+    <p>All extension code is bundled and shipped with the extension package. No code is loaded from external URLs at runtime.</p>
+  </div>
+
+  <div class="content-card">
+    <h2>Children's privacy</h2>
+    <p>Clear Cache Free does not knowingly collect any information from anyone, including children under 13. Because no data is collected at all, there is no special handling required.</p>
+  </div>
+
+  <div class="content-card">
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be posted on this page with a new "Last updated" date. Given that the extension collects no data, material changes to this policy are unlikely.</p>
+  </div>
+
+  <div class="content-card">
+    <h2>Contact</h2>
+    <p>Questions about this privacy policy or the extension?</p>
+    <p>
+      <strong>Russel Sese</strong><br>
+      <a href="mailto:russel.sese@batchee.com">russel.sese@batchee.com</a><br>
+      <a href="https://www.linkedin.com/in/russelsese/" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
+  </div>
+
+</main>
+
+<!-- ── Footer ────────────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="wrap">
+    <div>Built by <strong>Russel Sese</strong> — <a href="mailto:russel.sese@batchee.com">russel.sese@batchee.com</a></div>
+    <div class="footer-links">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="release-notes.html">Release Notes</a>
+      <a href="https://www.linkedin.com/in/russelsese/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
